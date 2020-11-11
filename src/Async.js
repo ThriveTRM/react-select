@@ -68,7 +68,7 @@ export default class Async extends Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		if (nextProps.options !== this.props.options) {
 			this.setState({
 				options: nextProps.options,
