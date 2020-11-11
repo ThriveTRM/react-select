@@ -19,9 +19,10 @@ If additional updates are needed to this source code, the process is:
 1. Create a branch against this repo
 2. Make the necessary changes to the code
 3. Run `npm run build` (this will transpile `/src` into `/lib` via Babel)
-4. Commit all the changes
-5. Issue a PR & merge
-6. Create a new GitHub Release, incrementing the version number  (e.g. `v1.0.0-rc.10` --> `v1.0.0-rc11`). This can be done by clicking "Draft a new release" on the [Releases page](https://github.com/ThriveTRM/react-select/releases).
-7. In the repo consuming this forked package, update `package.json` to point to the updated release version. `"react-select-legacy": "https://github.com/ThriveTrm/react-select#v1.0.0-rc.11"`, then `yarn install`
+4. Update the "version" key in `package.json` by incrementing the version number (e.g. `1.0.0-rc.10` --> `1.0.0-rc.11`).
+5. Commit all the changes
+6. Issue a PR & merge
+7. Create a new GitHub Release by clicking "Draft a new release" on the [Releases page](https://github.com/ThriveTRM/react-select/releases). Use the same version number you just added in `package.json`, and prefix with a "v" (`v1.0.0-rc.11`).
+8. In the repo consuming this forked package, update `package.json` to point to the updated release version. `"react-select-legacy": "https://github.com/ThriveTrm/react-select#v1.0.0-rc.11"`, then `yarn install`
 
 If you need to test your in-progress-changes via the consumer repos, you can do so by pointing the consumer's `package.json` directly at a branch of this repo rather than a release version: `"react-select-legacy": "https://github.com/ThriveTrm/react-select#branch-name-here"`, then `yarn install`
