@@ -43,10 +43,10 @@ $select-option-disabled-color:      lighten($select-text-color, 60%) !default;
 $select-noresults-color:            lighten($select-text-color, 40%) !default;
 
 // clear "x" button
-$select-clear-size:                 floor(($select-input-height / 2)) !default;
+$select-clear-size:                 floor(calc($select-input-height / 2)) !default;
 $select-clear-color:                #999 !default;
 $select-clear-hover-color:          #D0021B !default; // red
-$select-clear-width:                ($select-input-internal-height / 2) !default;
+$select-clear-width:                calc($select-input-internal-height / 2) !default;
 
 // arrow indicator
 $select-arrow-color:                #999 !default;
