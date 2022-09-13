@@ -151,7 +151,7 @@
 		outline: none;
 		// padding: 0;
 		line-height: 14px;  /* For IE 8 compatibility */
-		padding: (($select-input-internal-height - 14) / 2 - 2) 0 (($select-input-internal-height - 14) / 2 + 2);  /* For IE 8 compatibility */
+		padding: calc(($select-input-internal-height - 14px) / 2 - 2px) 0 calc(($select-input-internal-height - 14px) / 2 + 2px);  /* For IE 8 compatibility */
 		-webkit-appearance: none;
 
 		.is-focused & {
@@ -240,7 +240,7 @@
 .Select-arrow {
 	border-color: $select-arrow-color transparent transparent;
 	border-style: solid;
-	border-width: $select-arrow-width $select-arrow-width ($select-arrow-width / 2);
+	border-width: $select-arrow-width $select-arrow-width calc($select-arrow-width / 2);
 	display: inline-block;
 	height: 0;
 	width: 0;
